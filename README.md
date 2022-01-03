@@ -1,6 +1,12 @@
-# web-dev-course-lr
-This is a tailored course for LR.
+# Web Dev Course for Lorenzo Russo
+## About
+This is a tailored course for [Lorenzo Russo](https://github.com/LeonardoRusso1).
 
-I am editing this file just for showing to LR how to do a commit in GIT.
+I am helping Lorenzo to start a *web developer* career.
 
-This is the first LR commit.
+We are currently exploring vanilla JavaScript.
+
+## Structure
+During my lessons I use some example code to show the different JavaScript features.
+
+There is a subfolder called `exercises` where I publish all the challenges.
