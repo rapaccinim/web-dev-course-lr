@@ -1,4 +1,6 @@
 # Exercise - API - OpenWeather
+* do a `git fetch` to check if there are differences (between the origin and your local code)
+* if there are differences, do a `git pull` before proceding 
 * create a free account on [OpenWeather API](https://openweathermap.org/api)
 * remember that you could have to wait some minutes/hours before the API key activation
 * create a file index.html with a basic HTML structure with two input textboxes (1 for city name, 1 for the API key) and a button for submit
