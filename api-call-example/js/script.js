@@ -3,16 +3,17 @@ function makeJSONApiCall(){
     fetch('https://jsonplaceholder.typicode.com/todos/1')
 }
 
-const makeWeatherApiCall = (cityName, appId) => {
-
-    // this is a way to compose the API URL given two (query) parameters
-    const apiCallURL1 = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=" + appId;
-
-    fetch(apiCallURL1)
+const makeWeatherApiCall = (cityName, appId, jsonKey ) => {
 
     // a more elegant way to compose the API URL
-    const apiCallURL2 = `api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${appId}`
+    const apiCallURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${appId}`
 
-    //fetch(apiCallURL2)
-
+    fetch(apiCallURL)
+        .then(res => {
+            console.log( res.status===200 ? "OKKKK!" : "Ops")
+            return res
+        })
+        .then(res => res.json())
+        .then(response => console.log(`Key: ${jsonKey}, Value:`, response[jsonKey]))
+        .catch(err => console.log("Error! ", err))
 }
