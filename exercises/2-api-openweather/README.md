@@ -11,7 +11,7 @@
         * with id `sunset` that has the default text of `(to be loaded)`
 * write a JS code that:
     * takes the user input
-    * calls that [OpenWeather API](https://openweathermap.org/api) for the specific location entered by the user
+    * calls that [OpenWeather API](https://openweathermap.org/api) for the specific location entered by the user, using an API key that is stored in a separate file excluded from the git tree
     * according to the API's response, change the colour of `weatherCircle` to:
         * blue - if the weather is nice
         * grey - if the weather is cloudy
