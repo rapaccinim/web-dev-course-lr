@@ -4,7 +4,9 @@ This is a tailored course for [Leonardo Russo](https://github.com/LeonardoRusso1
 
 I am helping Leonardo to start a *web developer* career.
 
-We are currently exploring vanilla JavaScript.
+We are currently exploring:
+* vanilla JavaScript
+* React
 
 ## Structure
 During my lessons I use some example code to show the different JavaScript features.
