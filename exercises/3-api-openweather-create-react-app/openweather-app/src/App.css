@@ -1,0 +1,11 @@
+#weatherCircle{
+  border-radius: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
