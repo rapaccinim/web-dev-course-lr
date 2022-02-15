@@ -1,10 +1,8 @@
-import menu from './assets/hamburger-menu.svg';
-
 const CustomHeader = () => {
   return(
     <div className="ContainerHeader">
       <p className="logo">HereGoesLogo</p>
-      <img className="menu" src={menu} />
+      <img alt="hamburger menu icon" className="menu" src={process.env.PUBLIC_URL + 'assets/hamburger-menu.svg'} />
     </div>
   )
 }
