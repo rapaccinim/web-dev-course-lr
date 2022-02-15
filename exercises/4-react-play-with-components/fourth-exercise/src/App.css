@@ -1,0 +1,45 @@
+.ContainerHeader{
+  height: 120px;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+.logo{
+  margin: 1.2rem 0 0 2.5rem;
+  color: white;
+}
+.menu{
+  margin:1.2rem 2.5rem 0 0;
+  height: 40px;
+  width: 50px;
+}
+.ContainerFooter{
+  background-color: #74fc79;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright{
+  margin-left: 2.5rem;
+}
+.github-url{
+  margin-right: 2.5rem;
+  text-decoration: none;
+}
+.github-url:hover{
+  text-decoration: underline;
+	text-decoration-color: #ea5c2b;
+}
+.ContainerBody{
+  margin: 4rem 2.5rem 4rem 2.5rem;
+}
+.p-month{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 3px;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+}
