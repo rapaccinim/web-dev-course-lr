@@ -1,3 +1,5 @@
+import './CustomHeader.css'
+
 const CustomHeader = () => {
   return(
     <div className="ContainerHeader">

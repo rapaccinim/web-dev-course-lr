@@ -1,3 +1,5 @@
+import './CustomFooter.css'
+
 const CustomFooter = () => {
   return(
     <div className="ContainerFooter">

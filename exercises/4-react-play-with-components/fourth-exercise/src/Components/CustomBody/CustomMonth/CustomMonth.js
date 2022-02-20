@@ -1,3 +1,5 @@
+import './CustomMonth.css'
+
 const CustomMonth = (props) => {
 
   // Object literal

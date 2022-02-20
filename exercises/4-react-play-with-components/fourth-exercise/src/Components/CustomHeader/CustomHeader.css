@@ -1,0 +1,16 @@
+.ContainerHeader{
+  height: 120px;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+.logo{
+  margin: 1.2rem 0 0 2.5rem;
+  color: white;
+}
+.menu{
+  margin:1.2rem 2.5rem 0 0;
+  height: 40px;
+  width: 50px;
+}
