@@ -1,0 +1,18 @@
+.ContainerFooter{
+  background-color: #74fc79;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright{
+  margin-left: 2.5rem;
+}
+.github-url{
+  margin-right: 2.5rem;
+  text-decoration: none;
+}
+.github-url:hover{
+  text-decoration: underline;
+	text-decoration-color: #ea5c2b;
+}

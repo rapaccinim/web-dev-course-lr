@@ -1,0 +1,36 @@
+.ContainerHeader{
+  height: 120px;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  transition: 0.5s;
+  position: sticky;
+  top: 0;
+}
+.logo{
+  margin: 1.2rem 0 0 2.5rem;
+  color: white;
+}
+.menu-button--full{
+   top: 40px;
+   left: 20px;
+ }
+.menu-opener{
+  z-index: 50;
+  margin:1.2rem 2.5rem 0 0;
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 8px black);
+}
+.menu-closer{
+  z-index: 50;
+  height: 30px;
+  width: 35px;
+  position: fixed;
+  top:1.5rem;
+  right:2.8rem;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 8px grey);
+}
