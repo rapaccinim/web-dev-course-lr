@@ -10,21 +10,27 @@ const CustomHeader = () => {
     opacity: fullMenuVisible ? 1 : 0
   });
 
-  const [header, setHeader] = useState(false);
-  const changeHeader = () => {
-    if(document.documentElement.scrollTop > 120){
-      setHeader(true)
-      document.getElementById('ContainerHeader').style.height = 80+'px';
-    }else {
-      setHeader(false)
-      document.getElementById('ContainerHeader').style.height = 120+'px';
-    }
+  const shrinkElements = () => {
+    document.getElementById('ContainerHeader').style.height = 80+'px';
+    document.getElementById('logo').classList.add('shrinkLogo');
   }
-  window.addEventListener('scroll', changeHeader);
+  const normalizeElements = () => {
+    document.getElementById('ContainerHeader').style.height = 120+'px';
+    document.getElementById('logo').classList.remove('shrinkLogo');
+  }
+  const shrinkHeader = () => {
+    document.documentElement.scrollTop > 120
+    ?
+    shrinkElements()
+    :
+    normalizeElements()
+   }
+  window.addEventListener('scroll', shrinkHeader);
 
   return(
-    <div id="ContainerHeader"className='ContainerHeader'>
-      <p className='logo'>HereGoesLogo</p>
+    <div id="ContainerHeader" className='ContainerHeader'>
+      <img id='logo' className='logo' src={process.env.PUBLIC_URL + 'assets/logo.svg'}
+           alt='leonardo russo logo'/>
       <img className={fullMenuVisible ? 'menu-closer' : 'menu-opener'}
            src={fullMenuVisible ?
                 process.env.PUBLIC_URL + 'assets/menu-closer.svg' :

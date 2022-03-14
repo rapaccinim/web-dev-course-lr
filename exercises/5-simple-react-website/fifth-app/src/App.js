@@ -19,9 +19,9 @@ function App() {
     <div>
       {
         loading ?
-        
+
         <div className='App'>
-          <BarLoader color={'#bf006c'} loading={loading} size={150} />
+          <BarLoader color={'blue'} loading={loading} size={80} />
         </div>
 
         :

@@ -17,13 +17,13 @@
   display: inline-block;
   position: relative;
   color: #7f7c85;
-  padding: 0 4rem;
+  margin: 0 4rem;
   cursor: pointer;
   transition: color 0.5s;
   filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
 }
 .menu-list-item:hover{
-  color: #bf006c;
+  color: blue;
 }
 .menu-list-item:after {
   content: '';
@@ -33,7 +33,7 @@
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #bf006c;
+  background-color: blue;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
