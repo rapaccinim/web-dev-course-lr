@@ -18,14 +18,17 @@ const CustomHeader = () => {
     document.getElementById('ContainerHeader').style.height = 120+'px';
     document.getElementById('logo').classList.remove('shrinkLogo');
   }
-  const shrinkHeader = () => {
-    document.documentElement.scrollTop > 120
-    ?
-    shrinkElements()
-    :
-    normalizeElements()
-   }
-  window.addEventListener('scroll', shrinkHeader);
+  
+  window.addEventListener('scroll', (event) => {
+     document.documentElement.scrollTop > 120
+     ?
+     shrinkElements()
+     :
+     normalizeElements()
+ });
+
+
+
 
   return(
     <div id="ContainerHeader" className='ContainerHeader'>
@@ -34,9 +37,9 @@ const CustomHeader = () => {
       <img className={fullMenuVisible ? 'menu-closer' : 'menu-opener'}
            src={fullMenuVisible ?
                 process.env.PUBLIC_URL + 'assets/menu-closer.svg' :
-                process.env.PUBLIC_URL + 'assets/hamburger-menu.svg'
-              }
-           alt='hamburger menu icon' onClick={() => setFullMenuVisible(!fullMenuVisible)} />
+                process.env.PUBLIC_URL + 'assets/hamburger-menu.svg'}
+           alt='hamburger menu icon'
+           onClick={() => setFullMenuVisible(!fullMenuVisible)} />
       <Menu style={fullMenuAnimation}/>
     </div>
   )
