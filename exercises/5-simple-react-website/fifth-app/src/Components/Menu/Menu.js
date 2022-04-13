@@ -3,18 +3,11 @@ import React from 'react';
 import './Menu.css';
 
 const Menu = ({style}) => {
+  const listItems = ['Home', 'About', 'Contact'];
   return(
     <animated.div className='menu-container' style={style}>
      <nav className='menu-list'>
-        <p className='menu-list-item'>
-          Home
-        </p>
-        <p className='menu-list-item'>
-          About
-        </p>
-        <p className='menu-list-item'>
-          Contact
-        </p>
+      {listItems.map((item, i) => <p className='menu-list-item' key={i}>{item}</p>)}
      </nav>
     </animated.div>
   )
